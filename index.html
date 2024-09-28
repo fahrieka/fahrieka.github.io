@@ -1,10 +1,81 @@
-<html>
+<!DOCTYPE html>
+<html lang="id">
 <head>
-<title>Mohammad Fahri Eka Pramudya</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Web</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-top: 50px;
+        }
+        .info {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+        .info b {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        .link-section {
+            margin-top: 20px;
+        }
+        .link-section a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: blue;
+            font-size: 18px;
+        }
+        .link-section a:hover {
+            text-decoration: underline;
+        }
+        .date-time {
+            margin-top: 30px;
+            font-size: 16px;
+        }
+        img {
+          vertical-align: middle;
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          margin-top: 75px;
+        }
+    </style>
 </head>
 <body>
-    <p> Mohammad Fahri Eka Pramudya </p>
-    <p> 1202223024 </p>
-    <p><i> SI4604 </i> <b><u> Sistem Informasi</b></u></p>
+
+    <img src="WhatsApp Image 2024-09-28 at 14.49.34_36fb6823.jpg" alt="Foto Profil" class="profile-pic">
+
+    <div class="info">
+        <p><b>Mohammad Fahri Eka Pramudya</b></p>
+        <p><b>1202223024</b></p>
+        <p><b>Sistem Informasi</b></p>
+        <p><i>SI4604</i></p>
+    </div>
+
+    <div class="link-section">
+        <a href="https://youtu.be/dQw4w9WgXcQ?si=Twxqq5BTE7bDrYhP" target="_blank"><img src="download (2).jpeg" alt="Avatar" class="img"></a>
+        <a href="https://youtu.be/dQw4w9WgXcQ?si=Twxqq5BTE7bDrYhP" target="_blank"><img src="download (2).jpeg" alt="Avatar" class="img"></a>
+        <a href="https://youtu.be/dQw4w9WgXcQ?si=Twxqq5BTE7bDrYhP" target="_blank"><img src="download (2).jpeg" alt="Avatar" class="img"></a>
+    
+        <p id="datetime" align="right"></p>
+    <script>
+        var now = new Date();
+        var datetime = now.toLocaleString();
+        document.getElementById("datetime").innerHTML = datetime;
+    </script>
+    
+    </div>
+    </div>
 </body>
 </html>
